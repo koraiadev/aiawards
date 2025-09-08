@@ -4,6 +4,9 @@
 
 :root {
     --font-pretendard: ui-sans-serif, system-ui, -apple-system;
+    --color-main: #CFAE89;
+
+    --w-section-full: 950px;
 }
 
 body {
