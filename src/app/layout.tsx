@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import './styles/scrollbar.css';
 import { pretendard } from './fonts';
 
 export const metadata: Metadata = {

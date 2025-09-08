@@ -1,7 +1,7 @@
 import Section from '@/app/components/Section';
 import Image from 'next/image';
 
-export const metadata = { title: 'HOME | 기업인의 밤' };
+export const metadata = { title: '기업인의 밤' };
 
 export default function Page() {
     return (
