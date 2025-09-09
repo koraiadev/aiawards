@@ -4,5 +4,6 @@ export type News = {
     content: string;
     imageUrl: string;
     url: string;
-    uploaded: string;
+    createdAt: string;
+    fixedNews: boolean;
 };

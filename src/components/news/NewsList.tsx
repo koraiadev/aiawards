@@ -13,12 +13,6 @@ export default async function NewsList() {
 
     return (
         <>
-            <h2
-                className="text-4xl font-bold"
-                style={{ textShadow: 'rgba(0, 0, 0, 0.2) 2px 2px 6px' }}
-            >
-                2024
-            </h2>
             {
                 <ul className="flex gap-4">
                     {news.map((n) => (
