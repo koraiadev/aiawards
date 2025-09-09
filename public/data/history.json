@@ -1,0 +1,166 @@
+[
+  {
+    "year": 2024,
+    "sections": [
+      {
+        "title": "본상",
+        "items": [
+          { "id": 1, "label": "과학기술정보통신부 장관상", "company": "한글과컴퓨터" },
+          { "id": 2, "label": "산업통상자원부 장관상", "company": "KB국민은행" },
+          { "id": 3, "label": "중소벤처기업부 장관상", "company": "뉴엔에이아이" },
+          { "id": 4, "label": "한국지능정보사회진흥원 원장상", "company": "비글즈 & 피아스페이스" },
+          { "id": 5, "label": "정보통신산업진흥원 원장상", "company": "메가존클라우드 & 노타" },
+          { "id": 6, "label": "정보통신기획평가원 원장상", "company": "테스트웍스 & 스위트케이" }
+        ]
+      },
+      {
+        "title": "부문별 대상",
+        "items": [
+          { "id": 1, "label": "AI스타트업", "company": "지원서울경제진흥원" },
+          { "id": 2, "label": "통신", "company": "SK텔레콤" },
+          { "id": 3, "label": "여행 AI 솔루션", "company": "야놀자" },
+          { "id": 4, "label": "정보플랫폼", "company": "함샤우트 글로벌" },
+          { "id": 5, "label": "컴퓨팅", "company": "임팩티브AI" },
+          { "id": 6, "label": "인프라", "company": "대원씨티에스" },
+          { "id": 7, "label": "솔루션", "company": "아이이에스지" },
+          { "id": 8, "label": "청소로봇", "company": "브이디컴퍼니" },
+          { "id": 9, "label": "복지", "company": "진앤현웰빙" },
+          { "id": 10, "label": "커머스", "company": "쿠팡(주)" },
+          { "id": 11, "label": "교육", "company": "디피니션" }
+        ]
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "sections": [
+      {
+        "title": "본상",
+        "items": [
+          { "id": 1, "label": "과학기술정보통신부 장관상", "company": "제네시스랩" },
+          { "id": 2, "label": "한국지능정보사회진흥원 원장상", "company": "KB국민은행 & 아이헤이트플라잉버그스" },
+          { "id": 3, "label": "정보통신산업진흥원 원장상", "company": "뉴엔에이아이" },
+          { "id": 4, "label": "한국지능정보사회진흥원 원장상", "company": "메가존클라우드 & 엘리스그룹" },
+          { "id": 5, "label": "정보통신기획평가원 원장상", "company": "포지큐브 & 온더라이브" }
+        ]
+      }
+    ]
+  },
+  {
+    "year": 2022,
+    "sections": [
+      {
+        "title": "본상",
+        "items": [
+          { "id": 1, "label": "과학기술정보통신부 장관상", "company": "(주)이스트소프트" },
+          { "id": 2, "label": "한국지능정보사회진흥원 원장상", "company": "쿠팡(주) & (주)아이지넷" },
+          { "id": 3, "label": "정보통신산업진흥원 원장상", "company": "메가존클라우드 & (주)테스트웍스" },
+          { "id": 4, "label": "정보통신기획평가원 원장상", "company": "KB국민은행 & (주)앱테스트에이아이" }
+        ]
+      },
+      {
+        "title": "부문별 대상",
+        "items": [
+          { "id": 1, "label": "패션", "company": "오드컨셉(주)" },
+          { "id": 2, "label": "컴퓨팅", "company": "엔에이치엔클라우드(주)" },
+          { "id": 3, "label": "데이터", "company": "(주)크라우드웍스" },
+          { "id": 4, "label": "서비스", "company": "(주)이마트24·그램퍼스(주)" },
+          { "id": 5, "label": "의료", "company": "에이아이트릭스" },
+          { "id": 6, "label": "금융", "company": "(주)랩투아이" },
+          { "id": 7, "label": "교육 기관", "company": "성균관대학교 인공지능대학원" },
+          { "id": 8, "label": "교육 서비스", "company": "밀당PT" }
+        ]
+      }
+    ]
+  },
+  {
+    "year": 2021,
+    "sections": [
+      {
+        "title": "본상",
+        "items": [
+          { "id": 1, "label": "과학기술정보통신부 장관상", "company": "카카오엔터프라이즈" },
+          { "id": 2, "label": "한국지능정보사회진흥원 원장상", "company": "KT" },
+          { "id": 3, "label": "정보통신산업진흥원 원장상", "company": "메가존클라우드 & (주)테스트웍스" },
+          { "id": 4, "label": "정보통신기획평가원 원장상", "company": "KB국민은행 & (주)앱테스트에이아이" }
+        ]
+      },
+      {
+        "title": "부문별 대상",
+        "items": [
+          { "id": 1, "label": "e커머스", "company": "쿠팡(주)" },
+          { "id": 2, "label": "패션", "company": "(주)NHN" },
+          { "id": 3, "label": "금융", "company": "KB국민은행" },
+          { "id": 4, "label": "프로세스 자동화", "company": "애자일소다" },
+          { "id": 5, "label": "AI 데이터", "company": "(주)테스트웍스" },
+          { "id": 6, "label": "유통", "company": "(주) 인터마인즈" },
+          { "id": 7, "label": "원격 소프트웨어", "company": "알서포트(주)" },
+          { "id": 8, "label": "교육 플랫폼", "company": "키즈룹(주) (KidsLoop Co.Ltd)" },
+          { "id": 9, "label": "교육 서비스", "company": "밀당영어" },
+          { "id": 10, "label": "소프트웨어", "company": "(주)앱테스트에이아이" },
+          { "id": 11, "label": "스포츠", "company": "골프존" }
+        ]
+      }
+    ]
+  },
+  {
+    "year": 2020,
+    "sections": [
+      {
+        "title": "본상",
+        "items": [
+          { "id": 1, "label": "과학기술정보통신부 장관상", "company": "카카오엔터프라이즈" },
+          { "id": 2, "label": "한국지능정보사회진흥원 원장상", "company": "KT" },
+          { "id": 3, "label": "정보통신산업진흥원 원장상", "company": "메가존클라우드 & (주)테스트웍스" },
+          { "id": 4, "label": "정보통신기획평가원 원장상", "company": "KB국민은행 & (주)앱테스트에이아이" }
+        ]
+      },
+      {
+        "title": "부문별 대상",
+        "items": [
+          { "id": 1, "label": "e커머스", "company": "쿠팡(주)" },
+          { "id": 2, "label": "패션", "company": "(주)NHN" },
+          { "id": 3, "label": "금융", "company": "KB국민은행" },
+          { "id": 4, "label": "프로세스 자동화", "company": "애자일소다" },
+          { "id": 5, "label": "AI 데이터", "company": "(주)테스트웍스" },
+          { "id": 6, "label": "유통", "company": "(주) 인터마인즈" },
+          { "id": 7, "label": "원격 소프트웨어", "company": "알서포트(주)" },
+          { "id": 8, "label": "교육 플랫폼", "company": "키즈룹(주) (KidsLoop Co.Ltd)" },
+          { "id": 9, "label": "교육 서비스", "company": "밀당영어" },
+          { "id": 10, "label": "소프트웨어", "company": "(주)앱테스트에이아이" },
+          { "id": 11, "label": "스포츠", "company": "골프존" }
+        ]
+      }
+    ]
+  },
+  {
+    "year": 2019,
+    "sections": [
+      {
+        "title": "본상",
+        "items": [
+          { "id": 1, "label": "과학기술정보통신부 장관상", "company": "카카오엔터프라이즈" },
+          { "id": 2, "label": "한국지능정보사회진흥원 원장상", "company": "KT" },
+          { "id": 3, "label": "정보통신산업진흥원 원장상", "company": "메가존클라우드 & (주)테스트웍스" },
+          { "id": 4, "label": "정보통신기획평가원 원장상", "company": "KB국민은행 & (주)앱테스트에이아이" }
+        ]
+      },
+      {
+        "title": "부문별 대상",
+        "items": [
+          { "id": 1, "label": "e커머스", "company": "쿠팡(주)" },
+          { "id": 2, "label": "패션", "company": "(주)NHN" },
+          { "id": 3, "label": "금융", "company": "KB국민은행" },
+          { "id": 4, "label": "프로세스 자동화", "company": "애자일소다" },
+          { "id": 5, "label": "AI 데이터", "company": "(주)테스트웍스" },
+          { "id": 6, "label": "유통", "company": "(주) 인터마인즈" },
+          { "id": 7, "label": "원격 소프트웨어", "company": "알서포트(주)" },
+          { "id": 8, "label": "교육 플랫폼", "company": "키즈룹(주) (KidsLoop Co.Ltd)" },
+          { "id": 9, "label": "교육 서비스", "company": "밀당영어" },
+          { "id": 10, "label": "소프트웨어", "company": "(주)앱테스트에이아이" },
+          { "id": 11, "label": "스포츠", "company": "골프존" }
+        ]
+      }
+    ]
+  }
+]
