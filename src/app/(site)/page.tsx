@@ -1,4 +1,5 @@
-import Section from '@/app/components/Section';
+import Section from '@/components/Section';
+import NewsList from '@/components/news/NewsList';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -73,59 +74,7 @@ export default function Page() {
                 </div>
             </Section>
             <Section>
-                <h2
-                    className="text-4xl font-bold"
-                    style={{ textShadow: 'rgba(0, 0, 0, 0.2) 2px 2px 6px' }}
-                >
-                    2024
-                </h2>
-                <div className="flex gap-10 mt-8">
-                    <div>
-                        <img
-                            src="/img/img-news-01.png"
-                            alt="샘플 이미지"
-                            className="rounded-lg shadow-md"
-                        />
-                        <p className="mt-8 text-2xl font-bold">
-                            AI로 인정받은 20개 기업들, AI 강국 도약의 가능성 입증 [2024 AI대상]
-                        </p>
-                        <p className="mt-5 text-sm">
-                            올해로 6회째를 맞는 국내 대표 인공지능 시상식인 ‘2024 대한민국
-                            인공지능대상’에서 혁신 기술로 인공지능(AI) 생태계를 이끌고 있는 기업들이
-                            그 공로를 인정받아 …
-                        </p>
-                    </div>
-                    <div>
-                        <img
-                            src="/img/img-news-02.png"
-                            alt="샘플 이미지"
-                            className="rounded-lg shadow-md"
-                        />
-                        <p className="mt-8 text-2xl font-bold">
-                            [알립니다] 2024 대한민국 인공지능(AI)대상 주인공을 찾습니다
-                        </p>
-                        <p className="mt-5 text-sm">
-                            인공지능(AI)과 함께 살아가는 시대입니다. AI는 기술 혁신을 넘어 산업
-                            속으로 그리고 우리의 생활 속에 녹아들고 있습니다. 특정 분야에서 특정
-                            사람들만 사용하는 …
-                        </p>
-                    </div>
-                    <div>
-                        <img
-                            src="/img/img-news-03.png"
-                            alt="샘플 이미지"
-                            className="rounded-lg shadow-md"
-                        />
-                        <p className="mt-8 text-2xl font-bold">
-                            [2023 AI대상] 김영수 IT조선 대표 “AI 시대 발전 이끌 기업 발굴 노력할 것”
-                        </p>
-                        <p className="mt-5 text-sm">
-                            “우리는 이제 인공지능과 함께 살아가는 시대를 맞이했다. IT조선은 국내
-                            인공지능 산업이 더욱 발전하기를 바라며, 우수 기업을 발굴하고 알리는 데
-                            더욱 힘쓰겠다.”
-                        </p>
-                    </div>
-                </div>
+                <NewsList />
             </Section>
             <Section className="bg-gray-100 border-b-0 p-24">
                 <img
