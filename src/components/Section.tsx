@@ -8,7 +8,7 @@ export default function Section({
     className?: string;
 }) {
     return (
-        <section id={id} className={`mt-48 scroll-mt-16 flex items-center bg-white ${className}`}>
+        <section id={id} className={`mt-48 scroll-mt-16 flex items-center ${className}`}>
             <div className="mx-auto max-w-[var(--w-section-full)] w-full">{children}</div>
         </section>
     );

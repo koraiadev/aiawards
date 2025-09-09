@@ -6,6 +6,15 @@ import Link from 'next/link';
 export const metadata = { title: '기업인의 밤' };
 
 export default function Page() {
+    const logos = [
+        '/img/logo/logo-01-msit.png',
+        '/img/logo/logo-02-nipa.png',
+        '/img/logo/logo-03-nia.png',
+        '/img/logo/logo-04-iitp.png',
+        '/img/logo/logo-05-mss.png',
+        '/img/logo/logo-06-motie.png',
+    ];
+
     return (
         <>
             <section id="mainSection" className="relactive h-screen">
@@ -76,7 +85,7 @@ export default function Page() {
             <Section>
                 <NewsList />
             </Section>
-            <Section className="bg-gray-100 border-b-0 p-24">
+            <Section className="border-b-0 p-24 bg-gray-100">
                 <img
                     src="/img/img-2025-schedule.png"
                     alt="샘플 이미지"
@@ -121,7 +130,20 @@ export default function Page() {
                     </button>
                 </div>
             </Section>
-            <Section></Section>
+            <Section className="mb-48">
+                <div className="full-bleed overflow-hidden">
+                    <div className="flex animate-marquee w-max gap-[10%]">
+                        {[...logos, ...logos].map((src, i) => (
+                            <img
+                                key={i}
+                                src={src}
+                                alt={`logo-${i}`}
+                                className="h-14 w-auto object-contain"
+                            />
+                        ))}
+                    </div>
+                </div>
+            </Section>
         </>
     );
 }
