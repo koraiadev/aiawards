@@ -77,7 +77,7 @@ export default function Page() {
                     확대 진행합니다.
                 </h2>
                 <div className="mt-8 text-right">
-                    <Link href="/info" className="after:content-['>'] after:ml-1">
+                    <Link href="/history" className="after:content-['>'] after:ml-1">
                         더보기
                     </Link>
                 </div>
