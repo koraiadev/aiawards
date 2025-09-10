@@ -1,4 +1,4 @@
-import InfoForm from '@/app/(site)/info/_client/InfoForm';
+import ContactForm from '@/app/(site)/contact/_client/ContactForm';
 
 export const metadata = { title: 'CONTACT | 기업인의 밤' };
 
@@ -15,7 +15,7 @@ export default function Page() {
                     입니다.
                 </h2>
             </header>
-            <InfoForm />
+            <ContactForm />
         </>
     );
 }

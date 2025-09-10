@@ -2,7 +2,7 @@ import InfoLabel from '@/components/InfoLabel';
 
 const inputBase = 'peer w-full border-b py-2 outline-none pl-3';
 
-export default function InfoForm() {
+export default function ContactForm() {
     return (
         <section className="mx-auto max-w-[var(--w-section-full)] w-full flex flex-col gap-24 mb-52">
             <div className="flex gap-10">
