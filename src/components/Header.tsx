@@ -38,7 +38,7 @@ export default function Header() {
 
     return (
         <header
-            className={`fixed top-0 inset-x-0 z-50 text-white transition-colors duration-200
+            className={`fixed top-0 inset-x-0 z-50 text-white/70 transition-colors duration-200
              ${!dark ? 'bg-main-header' : 'bg-black shadow-md'}`}
         >
             <nav className="mx-auto max-w-6xl h-20 px-4 flex items-center justify-center">
@@ -51,7 +51,7 @@ export default function Header() {
                                     href={m.href}
                                     className={`relative inline-block pb
                                         after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[0.5px] after:bg-white after:transition-all after:duration-300
-                                        ${active ? 'after:w-full' : 'after:w-0 hover:after:w-full after:bg-white/80'} `}
+                                        ${active ? 'after:w-full text-white/100' : 'after:w-0 hover:after:w-full hover:text-white/100 after:bg-white/80'} `}
                                 >
                                     {m.label}
                                 </Link>
