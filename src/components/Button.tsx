@@ -13,9 +13,13 @@ export default function Button({
         <button
             onClick={onClick}
             className={`
-                w-auto bg-[var(--color-main)]
-                text-lg text-white font-semibold
-                py-4 px-16 ${className}
+                w-auto bg-transparent
+                text-lg text-[var(--color-main)] font-semibold
+                border-[3px] border-[var(--color-main)]
+                py-4 px-16 ${className} shadow-md
+                transition-all duration-300 ease-in-out will-change-transform
+                hover:-translate-y-1 hover:shadow-lg
+                hover:bg-[var(--color-main)] hover:text-[white] 
             `}
         >
             {children}
