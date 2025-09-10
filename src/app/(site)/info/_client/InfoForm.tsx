@@ -2,6 +2,8 @@
 
 import InfoLabel from '@/components/InfoLabel';
 import React, { useState } from 'react';
+import Button from '@/components/Button';
+import { logger } from '@/utils/logger';
 
 const accentText = 'text-[var(--color-main)] font-bold text-2xl';
 const boxBase =
@@ -12,6 +14,10 @@ export default function InfoForm() {
 
     const handleClick = (type: string = 'outline') => {
         setIsOutline(type === 'outline');
+    };
+
+    const handleCopy = () => {
+        logger('info', 'Clicked copy button.');
     };
 
     return (
@@ -340,9 +346,9 @@ export default function InfoForm() {
                                         </div>
                                     </div>
                                 </div>
-                                <button className="w-full bg-[var(--color-main)] text-white py-4 px-16">
+                                <Button onClick={handleCopy}>
                                     eventit@chosunbiz.com 이메일 복사
-                                </button>
+                                </Button>
                             </div>
                         </div>
                         <div className="flex gap-10">

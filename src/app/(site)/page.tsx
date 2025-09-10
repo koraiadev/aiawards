@@ -2,6 +2,7 @@ import Section from '@/components/Section';
 import NewsList from '@/components/news/NewsList';
 import Image from 'next/image';
 import Link from 'next/link';
+import HomeButtonSection from '@/app/(site)/_client/HomeButtonSection';
 
 export const metadata = { title: '기업인의 밤' };
 
@@ -121,14 +122,7 @@ export default function Page() {
                         </div>
                     </div>
                 </div>
-                <div className="flex gap-4 justify-center">
-                    <button className="bg-[var(--color-main)] text-white py-4 px-16 mt-12">
-                        신청하기
-                    </button>
-                    <button className="bg-[var(--color-main)] text-white py-4 px-16 mt-12">
-                        참가 신청서 & 공적서 양식 다운로드
-                    </button>
-                </div>
+                <HomeButtonSection />
             </Section>
             <Section className="mb-48">
                 <div className="full-bleed overflow-hidden">

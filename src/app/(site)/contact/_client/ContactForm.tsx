@@ -1,8 +1,16 @@
+'use client';
+
 import InfoLabel from '@/components/InfoLabel';
+import Button from '@/components/Button';
+import { logger } from '@/utils/logger';
 
 const inputBase = 'peer w-full border-b py-2 outline-none pl-3';
 
 export default function ContactForm() {
+    const handleContact = () => {
+        logger('info', 'Clicked contact button.');
+    };
+
     return (
         <section className="mx-auto max-w-[var(--w-section-full)] w-full flex flex-col gap-24 mb-52">
             <div className="flex gap-10">
@@ -65,9 +73,9 @@ export default function ContactForm() {
             </div>
             <div className="flex w-full">
                 <div className="w-44 flex-shrink-0"></div>
-                <button className="w-full bg-[var(--color-main)] text-white py-4 px-16">
+                <Button onClick={handleContact} className="w-full">
                     문의하기
-                </button>
+                </Button>
             </div>
         </section>
     );
