@@ -45,4 +45,33 @@ html, body { overflow-x: hidden }
     .animate-marquee {
         animation: marquee 40s linear infinite;
     }
+
+    @keyframes border-spin {
+        0% {
+            clip-path: inset(0 100% 100% 0); /* 왼쪽 위 → 시작 */
+        }
+        25% {
+            clip-path: inset(0 0 100% 0);     /* 위쪽 라인 */
+        }
+        50% {
+            clip-path: inset(0 0 0 0 round 0);/* 전체 다 보임 */
+        }
+        100% {
+            clip-path: inset(0 0 0 0 round 0);/* 유지 */
+        }
+    }
+
+    .animate-border-spin {
+        animation: border-spin 0.6s ease forwards;
+        opacity: 1 !important;
+    }
+}
+
+@layer components {
+    .input-text {
+        @apply absolute left-0 bottom-0 h-0.5 w-0 bg-[var(--color-main)]
+        transition-all duration-300
+        focus:border-transparent
+        peer-focus:w-full;
+    }
 }
