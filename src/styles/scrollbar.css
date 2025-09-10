@@ -1,18 +1,12 @@
 html {
-    scrollbar-width: thin;
-    scrollbar-color: #cacaca transparent;
+    scrollbar-width: auto;
 }
 
 ::-webkit-scrollbar {
     width: 6px;
-    height: 6px;
+    background-color: #F5F5F5;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #cacaca;
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-track {
-    background: transparent;
+    background-color: #CFAE89;
 }
