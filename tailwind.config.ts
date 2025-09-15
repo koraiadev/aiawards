@@ -9,6 +9,9 @@ const config: Config = {
             fontFamily: {
                 serif: ['Nanum Myeongjo', 'serif'],
             },
+            colors: {
+                dark: '#20212f',
+            },
         },
     },
     plugins: [lineClamp],

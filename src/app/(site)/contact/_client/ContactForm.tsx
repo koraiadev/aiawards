@@ -4,7 +4,7 @@ import InfoLabel from '@/components/InfoLabel';
 import Button from '@/components/Button';
 import { logger } from '@/utils/logger';
 
-const inputBase = 'peer w-full border-b py-2 outline-none pl-3';
+const inputBase = 'peer w-full border-b py-2 outline-none pl-3 bg-transparent';
 
 export default function ContactForm() {
     const handleContact = () => {
@@ -66,7 +66,7 @@ export default function ContactForm() {
                         id="content"
                         placeholder="문의내용을 입력하세요"
                         rows={10}
-                        className="peer w-full p-3 outline-none border resize-none transition-colors duration-300 focus:border-transparent"
+                        className="peer w-full bg-transparent p-3 outline-none border resize-none transition-colors duration-300 focus:border-transparent"
                     />
                     <span className="pointer-events-none absolute inset-px border-2 border-[var(--color-main)] opacity-0 peer-focus:animate-border-spin" />
                 </div>

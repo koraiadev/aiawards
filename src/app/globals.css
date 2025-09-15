@@ -13,6 +13,8 @@
 
 body {
     font-family: var(--font-pretendard), sans-serif;
+    background: black;
+    color: white;
 }
 
 html, body { overflow-x: hidden }
@@ -88,5 +90,18 @@ html, body { overflow-x: hidden }
         transition-all duration-300
         focus:border-transparent
         peer-focus:w-full;
+    }
+}
+
+@layer utilities {
+    @keyframes shine {
+        0% { background-position: 200% 0; }
+        100% { background-position: -200% 0; }
+    }
+
+    .shine-text {
+        @apply font-bold bg-gradient-to-r from-[#cfae89] via-[#e2c9a8] to-[#cfae89] bg-clip-text text-transparent;
+        background-size: 200% auto;
+        animation: shine 6s linear infinite;
     }
 }

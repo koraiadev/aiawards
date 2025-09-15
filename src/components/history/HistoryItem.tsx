@@ -2,7 +2,7 @@ import { HistoryData } from '@/types/history';
 
 export default function HistoryItem({ history }: { history: HistoryData }) {
     return (
-        <article className="relative mt-20 pl-12 md:pl-16">
+        <article className="relative mt-20 pl-12 md:pl-16 text-white/80">
             <div className="absolute left-6 top-2 h-3 w-3 -translate-x-1/2 rounded-full bg-stone-300 md:left-8"></div>
             <h2 className="font-serif text-5xl font-bold text-[var(--color-main)]">
                 {history.year}

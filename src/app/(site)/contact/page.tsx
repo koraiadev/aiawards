@@ -13,7 +13,7 @@ export default function Page() {
                         style={{ textShadow: 'rgba(0, 0, 0, 0.2) 2px 2px 6px' }}
                     >
                         대한민국 인공지능대상
-                        <span className="text-[var(--color-main)] px-2">운영사무국 문의처</span>
+                        <span className="shine-text px-2">운영사무국 문의처</span>
                         입니다.
                     </h2>
                 </AnimatedBox>

@@ -21,7 +21,7 @@ export default function InfoForm() {
     };
 
     return (
-        <section className="mx-auto max-w-[var(--w-section-full)] w-full flex mb-52 gap-24">
+        <section className="mx-auto max-w-[var(--w-section-full)] w-full flex mb-52 gap-24 text-white/80">
             <div
                 className={`
                 h-full flex flex-col gap-20

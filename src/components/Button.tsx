@@ -10,19 +10,20 @@ export default function Button({
     onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }>) {
     return (
-        <button
-            onClick={onClick}
-            className={`
-                w-auto bg-transparent
-                text-lg text-[var(--color-main)] font-semibold
-                border-[3px] border-[var(--color-main)]
-                py-4 px-16 ${className} shadow-md
-                transition-all duration-300 ease-in-out will-change-transform
-                hover:-translate-y-1 hover:shadow-lg
-                hover:bg-[var(--color-main)] hover:text-[white] 
-            `}
-        >
-            {children}
-        </button>
+        <>
+            <button
+                onClick={onClick}
+                className={`
+                    relative flex-1 m-2 px-10 py-6 text-center uppercase
+                    text-black font-semibold shadow-md
+                    transition-all duration-500 bg-[length:200%_auto]
+                    bg-gradient-to-r from-[var(--color-main)] via-[#e2c9a8] to-[var(--color-main)]
+                    hover:bg-[position:right_center]
+                    ${className}
+                `}
+            >
+                {children}
+            </button>
+        </>
     );
 }

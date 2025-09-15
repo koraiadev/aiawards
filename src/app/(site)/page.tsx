@@ -61,8 +61,7 @@ export default function Page() {
                         style={{ textShadow: 'rgba(0, 0, 0, 0.2) 2px 2px 6px' }}
                     >
                         인공지능대상 기업인의 밤 수상은 기업에게
-                        <span className="text-[var(--color-main)] pl-2">특별한 가치</span>를
-                        전합니다.
+                        <span className="pl-2 shine-text">특별한 가치</span>를 전합니다.
                     </h2>
                 </AnimatedBox>
                 <div className="relative mt-8">
@@ -81,11 +80,11 @@ export default function Page() {
                         className="text-3xl font-bold"
                         style={{ textShadow: 'rgba(0, 0, 0, 0.2) 2px 2px 6px' }}
                     >
-                        <span className="text-[var(--color-main)]">인공지능 분야를 대표</span>하는
-                        기관 및 기업들이 한 자리에 모여 소통하는
+                        <span className="shine-text">인공지능 분야를 대표</span>하는 기관 및
+                        기업들이 한 자리에 모여 소통하는
                         <br />
                         뜻깊은 자리가 될 수 있도록
-                        <span className="text-[var(--color-main)] pl-2">인공지능 기업인의 밤</span>
+                        <span className="shine-text pl-2">인공지능 기업인의 밤</span>
                         으로 확대 진행합니다.
                     </h2>
                     <div className="mt-8 text-right">
@@ -100,7 +99,7 @@ export default function Page() {
                     <NewsList />
                 </AnimatedBox>
             </Section>
-            <Section className="border-b-0 p-24 bg-gray-100">
+            <Section className="border-b-0 p-24 bg-dark">
                 <AnimatedBox fixed={false}>
                     <img
                         src="/img/img-2025-schedule.png"
@@ -130,12 +129,12 @@ export default function Page() {
                                     ${
                                         step.active
                                             ? 'bg-[var(--color-main)] border-[var(--color-main)]'
-                                            : 'border-[var(--color-main)] bg-white'
+                                            : 'border-[var(--color-main)] bg-dark'
                                     }`}
                                 />
 
                                 {i < arr.length - 1 && (
-                                    <div className="absolute top-3 left-1/2 w-full h-[2px] bg-gray-200 -z-10"></div>
+                                    <div className="absolute top-3 left-1/2 w-full h-[2px] bg-white/20 -z-10"></div>
                                 )}
 
                                 <div className="mt-6 flex flex-col gap-1">
