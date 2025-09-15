@@ -105,39 +105,56 @@ export default function Page() {
                     <img
                         src="/img/img-2025-schedule.png"
                         alt="샘플 이미지"
-                        className="rounded-lg shadow-md"
+                        className="rounded-lg shadow-md mb-10"
                     />
                 </AnimatedBox>
                 <AnimatedBox fixed={false}>
-                    <div className="flex gap-4 justify-center">
-                        <div className="flex gap-4">
-                            <div className="p-12 flex flex-col gap-2 items-center">
-                                <p className="text-[var(--color-main)] font-semibold">신청 접수</p>
-                                <p className="font-semibold">9.27 ~ 10.28</p>
-                                <p>온라인 서류 제출</p>
+                    <div className="relative flex justify-between max-w-5xl mx-auto mb-14">
+                        {[
+                            { title: '신청 접수', date: '9.27 - 10.28', desc: '온라인 서류 제출' },
+                            { title: '서류 심사', date: '10.29 - 10.30', desc: '1차 후보 선정' },
+                            { title: '최종 심사', date: '11.1', desc: '전문가 최종 평가' },
+                            {
+                                title: '시상식',
+                                date: '11.19',
+                                desc: '기업인의 밤 개최',
+                                active: true,
+                            },
+                        ].map((step, i, arr) => (
+                            <div
+                                key={i}
+                                className="relative flex flex-col items-center w-1/4 text-center"
+                            >
+                                <div
+                                    className={`w-6 h-6 rounded-full border-2 z-10
+                                    ${
+                                        step.active
+                                            ? 'bg-[var(--color-main)] border-[var(--color-main)]'
+                                            : 'border-[var(--color-main)] bg-white'
+                                    }`}
+                                />
+
+                                {i < arr.length - 1 && (
+                                    <div className="absolute top-3 left-1/2 w-full h-[2px] bg-gray-200 -z-10"></div>
+                                )}
+
+                                <div className="mt-6 flex flex-col gap-1">
+                                    <p className="font-semibold text-[var(--color-main)]">
+                                        {step.title}
+                                    </p>
+                                    <p
+                                        className={`${step.active ? 'text-[var(--color-main)]' : ''} font-semibold`}
+                                    >
+                                        {step.date}
+                                    </p>
+                                    <p
+                                        className={`${step.active ? 'text-[var(--color-main)]' : ''}`}
+                                    >
+                                        {step.desc}
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div className="flex gap-4">
-                            <div className="p-12 flex flex-col gap-2 items-center">
-                                <p className="text-[var(--color-main)] font-semibold">서류 심사</p>
-                                <p className="font-semibold">10.29 ~ 10.30</p>
-                                <p>1차 후보 선정</p>
-                            </div>
-                        </div>
-                        <div className="flex gap-4">
-                            <div className="p-12 flex flex-col gap-2 items-center">
-                                <p className="text-[var(--color-main)] font-semibold">최종 심사</p>
-                                <p className="font-semibold">11.1</p>
-                                <p>전문가 최종 평가</p>
-                            </div>
-                        </div>
-                        <div className="flex gap-4 text-[var(--color-main)]">
-                            <div className="p-12 flex flex-col gap-2 items-center">
-                                <p className="font-semibold">시상식</p>
-                                <p className="font-semibold">11.19</p>
-                                <p>기업인의 밤 개최</p>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </AnimatedBox>
                 <AnimatedBox fixed={false}>
