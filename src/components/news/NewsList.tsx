@@ -1,25 +1,14 @@
 import type { News } from '@/types/news';
-import NewsItem from '@/components/news/NewsItem';
+import NewsSwiper from '@/components/news/NewsSwiper';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL;
 
 async function getNews(): Promise<News[]> {
-    const res = await fetch(`${BASE_URL}/data/news.json`);
+    const res = await fetch(`${BASE_URL}/data/news.json`, { cache: 'no-store' });
     return res.json();
 }
 
 export default async function NewsList() {
     const news = await getNews();
-
-    return (
-        <>
-            {
-                <ul className="flex gap-4">
-                    {news.map((n) => (
-                        <NewsItem key={n.id} item={n} />
-                    ))}
-                </ul>
-            }
-        </>
-    );
+    return <NewsSwiper news={news} />;
 }
