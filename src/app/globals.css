@@ -21,7 +21,6 @@ html, body { overflow-x: hidden }
 /* custom */
 @layer utilities {
     .bg-main-header {
-        @apply border-b border-[#cacaca]/50;
         background-image:
                 linear-gradient(180deg, rgba(255,255,255,0.30) 0%, rgba(255,255,255,0.21) 100%),
                 linear-gradient(180deg, rgba(255,255,255,0.18) 0%, rgba(0,0,0,0.2) 100%);

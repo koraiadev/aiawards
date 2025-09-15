@@ -38,7 +38,7 @@ export default function Header() {
 
     return (
         <header
-            className={`fixed top-0 inset-x-0 z-50 text-white/70 transition-colors duration-200
+            className={`fixed top-0 inset-x-0 z-50 text-white/70 transition-colors duration-200 backdrop-blur-sm
              ${!dark ? 'bg-main-header' : 'bg-black shadow-md'}`}
         >
             <nav className="mx-auto max-w-6xl h-20 px-4 flex items-center justify-center">
