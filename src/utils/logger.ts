@@ -7,6 +7,6 @@ const styles: Record<LogType, string> = {
     ok: 'color: white; background: mediumseagreen; font-weight: 600; padding: 2px 4px; border-radius: 2px;',
 };
 
-export const logger = (type: LogType, ...messages: any[]) => {
+export const logger = (type: LogType, ...messages: string[]) => {
     console.log(`%c${' '}`, styles[type], ...messages);
 };
