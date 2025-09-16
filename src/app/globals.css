@@ -8,7 +8,7 @@
     --font-pretendard: ui-sans-serif, system-ui, -apple-system;
     --color-main: #CFAE89;
 
-    --w-section-full: 950px;
+    --w-section-full: 1200px;
 }
 
 body {
@@ -117,4 +117,10 @@ html, body { overflow-x: hidden }
         to   { transform: scale(1.00); opacity: 1; }
     }
     .animate-zoom-out-110 { animation: zoomOut110 1.8s ease-out forwards; }
+}
+
+@layer utilities {
+    .vertical-bar {
+        @apply before:content-['|'] before:mr-3 before:text-[var(--color-main)];
+    }
 }

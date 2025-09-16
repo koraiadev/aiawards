@@ -1,9 +1,9 @@
 import Section from '@/components/Section';
 import NewsList from '@/components/news/NewsList';
-import Link from 'next/link';
 import HomeButtonSection from '@/app/(site)/_client/HomeButtonSection';
 import AnimatedBox from '@/components/AnimatedBox';
 import HeroSection from '@/app/(site)/_client/HeroSection';
+import LinkButton from '@/components/LinkButton';
 
 export const metadata = { title: '기업인의 밤' };
 
@@ -22,8 +22,11 @@ export default function Page() {
             <HeroSection />
             <Section>
                 <AnimatedBox fixed={false}>
+                    <p className="mb-3 font-semibold tracking-wider vertical-bar">AI AWARDS</p>
+                </AnimatedBox>
+                <AnimatedBox fixed={false}>
                     <h2
-                        className="text-3xl font-bold before:content-['|'] before:mr-3 before:text-[var(--color-main)]"
+                        className="text-3xl font-bold"
                         style={{ textShadow: 'rgba(0, 0, 0, 0.2) 2px 2px 6px' }}
                     >
                         인공지능대상 기업인의 밤 수상은 기업에게
@@ -42,21 +45,39 @@ export default function Page() {
             </Section>
             <Section>
                 <AnimatedBox fixed={false}>
+                    <p className="mb-3 font-semibold tracking-wider vertical-bar">OUR HISTORY</p>
+                </AnimatedBox>
+                <AnimatedBox fixed={false}>
                     <h2
-                        className="text-3xl font-bold"
+                        className="text-4xl font-bold leading-tight"
                         style={{ textShadow: 'rgba(0, 0, 0, 0.2) 2px 2px 6px' }}
                     >
                         <span className="shine-text">인공지능 분야를 대표</span>하는 기관 및
-                        기업들이 한 자리에 모여 소통하는
+                        기업들이
                         <br />
-                        뜻깊은 자리가 될 수 있도록
-                        <span className="shine-text pl-2">인공지능 기업인의 밤</span>
+                        한 자리에 모여 소통하는 뜻깊은 자리가 될 수 있도록
+                        <br />
+                        <span className="shine-text">인공지능 기업인의 밤</span>
                         으로 확대 진행합니다.
                     </h2>
-                    <div className="mt-8 text-right">
-                        <Link href="/history" className="after:content-['>'] after:ml-1">
+                    <div className="mt-8">
+                        <LinkButton href="/history" className="text-lg">
                             더보기
-                        </Link>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                strokeWidth="1.5"
+                                stroke="currentColor"
+                                className="size-4 ml-2"
+                            >
+                                <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                                />
+                            </svg>
+                        </LinkButton>
                     </div>
                 </AnimatedBox>
             </Section>
