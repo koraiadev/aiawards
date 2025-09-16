@@ -25,8 +25,8 @@ export default function AnimatedBox({ children, fixed = true, className = '' }: 
                 }
             },
             {
-                threshold: 0.1,
-                rootMargin: '0px 0px -50px 0px',
+                threshold: 0.3,
+                rootMargin: '0px 0px -100px 0px',
             },
         );
 

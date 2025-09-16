@@ -21,7 +21,7 @@ export default function NewsItem({ item }: { item: News }) {
             >
                 <div
                     className="
-                        flex flex-col gap-5 py-10 px-6 rounded-xl cursor-pointer bg-dark
+                        flex flex-col gap-5 rounded cursor-pointer bg-dark
                         transition-transform transform duration-500 ease-out
                         hover:-translate-y-4 hover:shadow-2xl
                     "
@@ -29,23 +29,23 @@ export default function NewsItem({ item }: { item: News }) {
                         boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px',
                     }}
                 >
-                    <div className="relative w-auto h-24">
+                    <div className="relative w-auto h-48 img-zoom-container rounded">
                         <Image
                             alt="샘플 이미지"
                             src={item.imageUrl}
                             fill
                             unoptimized
-                            className="rounded shadow-md"
+                            className="shadow-md img-zoom"
                             style={{
                                 objectFit: 'cover',
                                 objectPosition: 'center',
                             }}
                         />
                     </div>
-                    <h3 className="text-xl font-bold line-clamp-2" title={item.title}>
+                    <h3 className="text-xl font-bold line-clamp-2 px-6" title={item.title}>
                         {item.title}
                     </h3>
-                    <p className="text-lg line-clamp-3 text-white/70">{item.content}</p>
+                    <p className="text-lg line-clamp-3 text-white/70 px-6 mb-6">{item.content}</p>
                 </div>
             </a>
         </div>

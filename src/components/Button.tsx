@@ -10,10 +10,9 @@ export default function Button({
     onClick?: React.MouseEventHandler<HTMLButtonElement>;
 }>) {
     return (
-        <>
-            <button
-                onClick={onClick}
-                className={`
+        <button
+            onClick={onClick}
+            className={`
                     relative flex-1 m-2 px-10 py-6 text-center uppercase
                     text-black font-semibold shadow-md
                     transition-all duration-500 bg-[length:200%_auto]
@@ -21,9 +20,8 @@ export default function Button({
                     hover:bg-[position:right_center]
                     ${className}
                 `}
-            >
-                {children}
-            </button>
-        </>
+        >
+            {children}
+        </button>
     );
 }

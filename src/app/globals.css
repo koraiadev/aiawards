@@ -127,4 +127,18 @@ html, body { overflow-x: hidden }
     .width-full {
         @apply mx-auto max-w-[var(--w-section-full)] w-full px-5;
     }
+
+    .img-zoom-container {
+        @apply relative overflow-hidden;
+    }
+
+    .img-zoom-container::after {
+        content: '';
+        @apply absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/20;
+        pointer-events: none;
+    }
+
+    .img-zoom {
+        @apply transition-transform duration-500 ease-in-out hover:scale-105;
+    }
 }

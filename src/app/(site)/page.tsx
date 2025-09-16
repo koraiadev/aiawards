@@ -35,11 +35,13 @@ export default function Page() {
                 </AnimatedBox>
                 <div className="relative mt-8">
                     <AnimatedBox fixed={false}>
-                        <img
-                            src="/img/img-attend-the-awards-ceremony.png"
-                            alt="샘플 이미지"
-                            className="rounded-lg shadow-md"
-                        />
+                        <div className="img-zoom-container">
+                            <img
+                                src="/img/img-attend-the-awards-ceremony.png"
+                                alt="샘플 이미지"
+                                className="w-full h-full img-zoom"
+                            />
+                        </div>
                     </AnimatedBox>
                 </div>
             </Section>
@@ -83,19 +85,63 @@ export default function Page() {
             </Section>
             <Section>
                 <AnimatedBox fixed={false}>
+                    <div className="mb-3 py-3 flex justify-between">
+                        <p className="font-semibold tracking-wider vertical-bar">MEDIA</p>
+                        <div className="flex gap-x-3">
+                            <button className="custom-prev bg-dark/70 hover:bg-dark text-white/80 rounded-full shadow-lg p-1 transition">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    strokeWidth={1.5}
+                                    stroke="currentColor"
+                                    className="size-5"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        d="M15.75 19.5 8.25 12l7.5-7.5"
+                                    />
+                                </svg>
+                            </button>
+                            <button className="custom-next bg-dark/70 hover:bg-dark text-white/80 rounded-full shadow-lg p-1 transition">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    strokeWidth={1.5}
+                                    stroke="currentColor"
+                                    className="size-5"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                                    />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </AnimatedBox>
+                <AnimatedBox fixed={false}>
                     <NewsList />
                 </AnimatedBox>
             </Section>
             <Section className="border-b-0 p-24 bg-dark">
                 <AnimatedBox fixed={false}>
-                    <img
-                        src="/img/img-2025-schedule.png"
-                        alt="샘플 이미지"
-                        className="rounded-lg shadow-md mb-10"
-                    />
+                    <p className="mb-3 font-semibold tracking-wider vertical-bar">PROGRAM</p>
                 </AnimatedBox>
                 <AnimatedBox fixed={false}>
-                    <div className="relative flex justify-between max-w-5xl mx-auto mb-14">
+                    <div className="img-zoom-container">
+                        <img
+                            src="/img/img-2025-schedule.png"
+                            alt="샘플 이미지"
+                            className="w-full h-full img-zoom"
+                        />
+                    </div>
+                </AnimatedBox>
+                <AnimatedBox fixed={false}>
+                    <div className="relative flex justify-between max-w-5xl mx-auto my-14">
                         {[
                             { title: '신청 접수', date: '9.27 - 10.28', desc: '온라인 서류 제출' },
                             { title: '서류 심사', date: '10.29 - 10.30', desc: '1차 후보 선정' },
@@ -141,7 +187,7 @@ export default function Page() {
             </Section>
             <Section className="mb-48">
                 <div className="full-bleed overflow-hidden">
-                    <div className="flex animate-marquee w-max gap-[10%]">
+                    <div className="flex animate-marquee w-max gap-24">
                         {[...logos, ...logos].map((src, i) => (
                             <img
                                 key={i}

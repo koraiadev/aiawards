@@ -24,7 +24,10 @@ export default function NewsSwiper({ news }: { news: News[] }) {
                 modules={[Navigation]}
                 spaceBetween={40}
                 slidesPerView={3}
-                // navigation
+                navigation={{
+                    nextEl: '.custom-next',
+                    prevEl: '.custom-prev',
+                }}
                 loop
                 className="py-6"
                 breakpoints={{
@@ -32,16 +35,12 @@ export default function NewsSwiper({ news }: { news: News[] }) {
                     768: { slidesPerView: 2 },
                     1024: { slidesPerView: 3 },
                 }}
-                style={{ overflow: 'visible' }}
             >
                 {news.map((n) => (
                     <SwiperSlide key={n.id}>
                         <NewsItem item={n} />
                     </SwiperSlide>
                 ))}
-
-                {/*<div className="swiper-button-prev hidden"></div>*/}
-                {/*<div className="swiper-button-next hidden"></div>*/}
             </Swiper>
         </div>
     );
