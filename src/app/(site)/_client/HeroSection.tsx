@@ -19,7 +19,7 @@ export default function HeroSection() {
         >
             <div className="absolute inset-0">
                 <Image
-                    src="/img/bg-main.png"
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/bg-main.png`}
                     alt="메인 배경"
                     fill
                     priority

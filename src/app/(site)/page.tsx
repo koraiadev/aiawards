@@ -43,7 +43,7 @@ export default function Page() {
                     <AnimatedBox fixed={false}>
                         <div className="img-zoom-container">
                             <img
-                                src="/img/img-attend-the-awards-ceremony.png"
+                                src={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/img-attend-the-awards-ceremony.png`}
                                 alt="샘플 이미지"
                                 className="w-full h-full img-zoom"
                             />
@@ -146,7 +146,7 @@ export default function Page() {
                 <AnimatedBox fixed={false}>
                     <div className="img-zoom-container">
                         <img
-                            src="/img/img-2025-schedule.png"
+                            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/img-2025-schedule.png`}
                             alt="샘플 이미지"
                             className="w-full h-full img-zoom"
                         />
@@ -211,7 +211,7 @@ export default function Page() {
                         {[...logos, ...logos].map((src, i) => (
                             <img
                                 key={i}
-                                src={src}
+                                src={`${process.env.NEXT_PUBLIC_BASE_PATH}${src}`}
                                 alt={`logo-${i}`}
                                 className="h-14 w-auto object-contain"
                             />

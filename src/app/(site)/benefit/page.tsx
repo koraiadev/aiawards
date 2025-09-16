@@ -32,7 +32,7 @@ export default function Page() {
                 <AnimatedBox>
                     <div className="img-zoom-container">
                         <img
-                            src="/img/img-emblem.png"
+                            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/img-emblem.png`}
                             alt="샘플 이미지"
                             className="shadow-md img-zoom"
                         />
@@ -41,7 +41,7 @@ export default function Page() {
                 <AnimatedBox>
                     <div className="img-zoom-container">
                         <img
-                            src="/img/img-plaque.png"
+                            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/img-plaque.png`}
                             alt="샘플 이미지"
                             className="shadow-md img-zoom"
                         />
@@ -50,7 +50,7 @@ export default function Page() {
                 <AnimatedBox>
                     <div className="img-zoom-container">
                         <img
-                            src="/img/img-attend.png"
+                            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/img-attend.png`}
                             alt="샘플 이미지"
                             className="shadow-md img-zoom"
                         />
@@ -59,7 +59,7 @@ export default function Page() {
                 <AnimatedBox>
                     <div className="img-zoom-container">
                         <img
-                            src="/img/image-press-reports.png"
+                            src={`${process.env.NEXT_PUBLIC_BASE_PATH}/img/image-press-reports.png`}
                             alt="샘플 이미지"
                             className="shadow-md img-zoom"
                         />
