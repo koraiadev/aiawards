@@ -23,7 +23,7 @@ export default function NewsSwiper({ news }: { news: News[] }) {
             <Swiper
                 modules={[Navigation]}
                 spaceBetween={40}
-                slidesPerView={3}
+                slidesPerView={1}
                 navigation={{
                     nextEl: '.custom-next',
                     prevEl: '.custom-prev',

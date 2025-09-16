@@ -20,7 +20,13 @@ export default function Page() {
     return (
         <>
             <HeroSection />
-            <Section>
+            <Section
+                className="border-b-0 py-24"
+                style={{
+                    background:
+                        'linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(42, 43, 66, 1) 50%, rgba(0, 0, 0, 1) 100%)',
+                }}
+            >
                 <AnimatedBox fixed={false}>
                     <p className="mb-3 font-semibold tracking-wider vertical-bar">AI AWARDS</p>
                 </AnimatedBox>
@@ -127,7 +133,13 @@ export default function Page() {
                     <NewsList />
                 </AnimatedBox>
             </Section>
-            <Section className="border-b-0 p-24 bg-dark">
+            <Section
+                className="border-b-0 py-24"
+                style={{
+                    background:
+                        'linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(42, 43, 66, 1) 50%, rgba(0, 0, 0, 1) 100%)',
+                }}
+            >
                 <AnimatedBox fixed={false}>
                     <p className="mb-3 font-semibold tracking-wider vertical-bar">PROGRAM</p>
                 </AnimatedBox>
@@ -143,8 +155,16 @@ export default function Page() {
                 <AnimatedBox fixed={false}>
                     <div className="relative flex justify-between max-w-5xl mx-auto my-14">
                         {[
-                            { title: '신청 접수', date: '9.27 - 10.28', desc: '온라인 서류 제출' },
-                            { title: '서류 심사', date: '10.29 - 10.30', desc: '1차 후보 선정' },
+                            {
+                                title: '신청 접수',
+                                date: '9.27 - 10.28',
+                                desc: '온라인 서류 제출',
+                            },
+                            {
+                                title: '서류 심사',
+                                date: '10.29 - 10.30',
+                                desc: '1차 후보 선정',
+                            },
                             { title: '최종 심사', date: '11.1', desc: '전문가 최종 평가' },
                             {
                                 title: '시상식',

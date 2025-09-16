@@ -125,7 +125,7 @@ html, body { overflow-x: hidden }
     }
 
     .width-full {
-        @apply mx-auto max-w-[var(--w-section-full)] w-full px-5;
+        @apply mx-auto max-w-[var(--w-section-full)] w-full px-6;
     }
 
     .img-zoom-container {

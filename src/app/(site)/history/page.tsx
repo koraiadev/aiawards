@@ -6,7 +6,7 @@ export const metadata = { title: 'HISTORY | 기업인의 밤' };
 export default function Page() {
     return (
         <>
-            <header className="width-full my-52">
+            <header className="width-full md:mt-52 my-32">
                 <AnimatedBox fixed={false}>
                     <p className="mb-3 font-semibold tracking-wider vertical-bar">OUR HISTORY</p>
                 </AnimatedBox>
@@ -33,9 +33,14 @@ export default function Page() {
                 className="
                   relative width-full mb-52
                   before:content-[''] before:absolute before:top-0 before:bottom-0
-                  before:left-6 before:w-px before:bg-stone-300
+                  before:left-6 before:w-px
+                  {/*before:bg-stone-300*/}
                   md:before:left-8
                 "
+                style={{
+                    background:
+                        'linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 0%, rgba(48, 44, 30, 1) 8%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 1) 100%)',
+                }}
             >
                 <AnimatedBox fixed>
                     <HistoryList />

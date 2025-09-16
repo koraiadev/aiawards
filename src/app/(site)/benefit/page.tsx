@@ -5,7 +5,7 @@ export const metadata = { title: 'BENEFIT | 기업인의 밤' };
 export default function Page() {
     return (
         <>
-            <header className="width-full mt-52 mb-32">
+            <header className="width-full md:mt-52 my-32">
                 <AnimatedBox fixed={false}>
                     <p className="mb-3 font-semibold tracking-wider vertical-bar">BENEFIT</p>
                 </AnimatedBox>
@@ -18,8 +18,9 @@ export default function Page() {
                         <span className="shine-text pl-2">다양한 특전이 제공</span>
                         됩니다.
                         <br /> 수상 기업으로서의
-                        <span className="shine-text">명예와 함께, 협회 차원의 홍보 지원</span>과
-                        <span className="shine-text">
+                        <span className="shine-text pl-2">명예와 함께, 협회 차원의 홍보 지원</span>
+                        과
+                        <span className="shine-text pl-2">
                             네트워킹 기회 등<br /> 여러 혜택
                         </span>
                         을 누리실 수 있습니다.
