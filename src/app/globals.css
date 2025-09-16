@@ -132,13 +132,21 @@ html, body { overflow-x: hidden }
         @apply relative overflow-hidden;
     }
 
+    .img-zoom {
+        @apply w-full h-full transition-transform duration-500 ease-in-out;
+    }
+
     .img-zoom-container::after {
         content: '';
-        @apply absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/20;
+        @apply absolute inset-0 bg-black/0 transition duration-500 ease-in-out;
         pointer-events: none;
     }
 
-    .img-zoom {
-        @apply transition-transform duration-500 ease-in-out hover:scale-105;
+    .img-zoom-container:hover .img-zoom {
+        @apply scale-105;
+    }
+
+    .img-zoom-container:hover::after {
+        @apply bg-black/30;
     }
 }

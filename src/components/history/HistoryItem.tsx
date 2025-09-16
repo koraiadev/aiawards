@@ -9,13 +9,13 @@ export default function HistoryItem({ history }: { history: HistoryData }) {
             <div className="mt-6 grid gap-8 md:grid-cols-2">
                 {history.sections.map((section, index) => (
                     <section key={index} className="space-y-3">
-                        <h3 className="font-semibold">
+                        <h3 className="font-semibold vertical-bar text-white">
                             {section.title}({section.items.length ?? 0}개)
                         </h3>
                         <ul className="list-disc pl-5 space-y-2">
                             {section.items.map((item) => (
                                 <li key={item.id}>
-                                    <strong>{item.label}</strong> {item.company}
+                                    <span className="text-white">{item.label}</span> {item.company}
                                 </li>
                             ))}
                         </ul>

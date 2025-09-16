@@ -6,9 +6,10 @@ type Props = {
     children: React.ReactNode;
     fixed?: boolean;
     className?: string;
+    delay?: number;
 };
 
-export default function AnimatedBox({ children, fixed = true, className = '' }: Props) {
+export default function AnimatedBox({ children, fixed = true, className = '', delay = 0 }: Props) {
     const ref = useRef<HTMLDivElement>(null);
     const [isVisible, setIsVisible] = useState(true);
 
@@ -46,6 +47,9 @@ export default function AnimatedBox({ children, fixed = true, className = '' }: 
                 ${isVisible ? 'animate-slide-down' : 'opacity-0 -translate-y-8'}
                 ${className}
             `}
+            style={{
+                transitionDelay: `${delay}ms`,
+            }}
         >
             {children}
         </div>

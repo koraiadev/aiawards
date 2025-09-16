@@ -31,20 +31,20 @@ export default function InfoForm() {
                     onClick={() => handleClick('outline')}
                     className={`font-semibold text-2xl w-32 ${isOutline && 'text-main'}`}
                 >
-                    행사개요
+                    <p className="vertical-bar">행사개요</p>
                 </button>
 
                 <button
                     onClick={() => handleClick('attend')}
                     className={`font-semibold text-2xl w-32 ${!isOutline && 'text-main'}`}
                 >
-                    참가안내
+                    <p className="vertical-bar">참가안내</p>
                 </button>
             </div>
             <div className="flex flex-col gap-14">
                 {isOutline ? (
                     <>
-                        {/* 행사 개요 */}
+                        {/* 행사개요 */}
                         <div className="flex gap-10">
                             <div className="w-44">
                                 <div>
@@ -247,7 +247,7 @@ export default function InfoForm() {
                                         최종 심사 : 분야별 AI 전문가로 구성된 심사위원단이
                                         기술성(30%), 혁신성(30%), 시장성(40%) 기준으로 공정 평가
                                     </li>
-                                    <div className="flex gap-10 mt-2">
+                                    <div className="flex gap-10 mt-3 ml-5">
                                         <div className={`${boxBase} w-36 h-24`}>기술성 30</div>
                                         <div className={`${boxBase} w-36 h-24`}>혁신성 30</div>
                                         <div className={`${boxBase} w-36 h-24`}>시장성 40</div>
@@ -320,33 +320,42 @@ export default function InfoForm() {
                                     <br /> ※ 관련 자료 미비 시, 운영사무국에서 추가 서류를 요청할 수
                                     있습니다.
                                 </div>
-                                <div className="flex gap-4 my-5">
-                                    <div className={`${boxBase} w-1/4 h-24 font-bold text-2xl`}>
-                                        참가신청서
-                                    </div>
-                                    <div className={`${boxBase} w-1/4 h-24 font-bold text-2xl`}>
-                                        <div>
-                                            <p>공적서</p>
-                                            <p className="text-sm">(기업&기술 소개서)</p>
-                                        </div>
-                                    </div>
-                                    <div className={`${boxBase} w-1/4 h-24 font-bold text-2xl`}>
-                                        <div>
-                                            <p>사업자등록증</p>
-                                            <p className="text-sm">(사본)</p>
-                                        </div>
-                                    </div>
-                                    <div className={`${boxBase} w-1/4 h-24 font-bold text-2xl`}>
-                                        <div>
-                                            <p>
-                                                회사소개서 or <br /> 제품소개서
-                                            </p>
-                                            <p className="text-sm">(AI기술 및 적용 소개 필수)</p>
-                                        </div>
-                                    </div>
+                                <div className="flex flex-col gap-4 my-5">
+                                    <p className="vertical-bar">참가신청서</p>
+                                    <p className="vertical-bar">
+                                        공적서
+                                        <span className="text-sm pl-2">(기업&기술 소개서)</span>
+                                    </p>
+                                    <p className="vertical-bar">
+                                        사업자등록증
+                                        <span className="text-sm pl-2">(사본)</span>
+                                    </p>
+                                    <p className="vertical-bar">
+                                        회사소개서 or 제품소개서
+                                        <span className="text-sm pl-2">
+                                            (AI기술 및 적용 소개 필수)
+                                        </span>
+                                    </p>
                                 </div>
-                                <Button onClick={handleCopy}>
-                                    eventit@chosunbiz.com 이메일 복사
+                                <Button
+                                    onClick={handleCopy}
+                                    className="flex justify-center items-center m-0"
+                                >
+                                    제출처 이메일 복사
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        strokeWidth={1.5}
+                                        stroke="currentColor"
+                                        className="size-5 ml-2"
+                                    >
+                                        <path
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"
+                                        />
+                                    </svg>
                                 </Button>
                             </div>
                         </div>

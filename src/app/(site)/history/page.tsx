@@ -7,17 +7,26 @@ export default function Page() {
     return (
         <>
             <header className="width-full my-52">
-                <AnimatedBox>
-                    <h2
-                        className="text-3xl font-bold"
-                        style={{ textShadow: 'rgba(0, 0, 0, 0.2) 2px 2px 6px' }}
-                    >
-                        <span className="shine-text">인공지능 분야를 대표</span>하는 기관 및
-                        기업들이 한 자리에 모여 소통하는 뜻깊은 자리가 될 수 있도록
-                        <span className="shine-text pl-2">인공지능 기업인의 밤</span>
-                        으로 확대 진행합니다.
-                    </h2>
+                <AnimatedBox fixed={false}>
+                    <p className="mb-3 font-semibold tracking-wider vertical-bar">OUR HISTORY</p>
                 </AnimatedBox>
+
+                <h2
+                    className="text-3xl/10 font-bold"
+                    style={{ textShadow: 'rgba(0, 0, 0, 0.2) 2px 2px 6px' }}
+                >
+                    <AnimatedBox delay={200} className="block">
+                        <span className="shine-text">인공지능 분야를 대표</span>하는 기관 및
+                        기업들이
+                    </AnimatedBox>
+                    <AnimatedBox delay={400} className="block">
+                        한 자리에 모여 소통하는 뜻깊은 자리가 될 수 있도록
+                    </AnimatedBox>
+                    <AnimatedBox delay={600} className="block">
+                        <span className="shine-text">인공지능 기업인의 밤</span>으로 확대
+                        진행합니다.
+                    </AnimatedBox>
+                </h2>
             </header>
 
             <section

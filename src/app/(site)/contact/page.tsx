@@ -7,6 +7,9 @@ export default function Page() {
     return (
         <>
             <header className="width-full mt-52 mb-32">
+                <AnimatedBox fixed={false}>
+                    <p className="mb-3 font-semibold tracking-wider vertical-bar">CONTACT</p>
+                </AnimatedBox>
                 <AnimatedBox>
                     <h2
                         className="text-3xl font-bold"
