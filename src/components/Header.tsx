@@ -28,7 +28,7 @@ export default function Header() {
 
         const observer = new IntersectionObserver(([entry]) => setDark(!entry.isIntersecting), {
             threshold: 0,
-            rootMargin: '-170px 0px 0px 0px',
+            rootMargin: '-80px 0px 0px 0px',
         });
 
         if (mainSectionRef.current) observer.observe(mainSectionRef.current);
@@ -38,8 +38,8 @@ export default function Header() {
 
     return (
         <header
-            className={`fixed top-0 inset-x-0 z-50 text-white/70 transition-colors duration-200 backdrop-blur-sm
-             ${!dark ? 'bg-main-header' : 'bg-black shadow-md'}`}
+            className={`fixed top-0 inset-x-0 z-50 text-white/80 transition-all duration-500
+                ${!dark ? 'bg-white/10 backdrop-blur-sm border-b border-white/10' : 'bg-black/30 backdrop-blur-md shadow-lg border-b border-white/20'}`}
         >
             <nav className="mx-auto max-w-6xl h-20 px-4 flex items-center justify-center">
                 <ul className="flex gap-[100px] text-md font-semibold">
