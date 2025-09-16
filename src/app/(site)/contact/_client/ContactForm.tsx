@@ -12,7 +12,7 @@ export default function ContactForm() {
     };
 
     return (
-        <section className="mx-auto max-w-[var(--w-section-full)] w-full flex flex-col gap-24 mb-52">
+        <section className="width-full flex flex-col gap-24 mb-52">
             <div className="flex gap-10">
                 <div className="w-44">
                     <InfoLabel label="name">성함</InfoLabel>

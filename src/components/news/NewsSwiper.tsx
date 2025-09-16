@@ -23,13 +23,14 @@ export default function NewsSwiper({ news }: { news: News[] }) {
             <Swiper
                 modules={[Navigation]}
                 spaceBetween={40}
-                slidesPerView={2}
+                slidesPerView={3}
                 // navigation
                 loop
                 className="py-6"
                 breakpoints={{
-                    768: { slidesPerView: 1 },
-                    1024: { slidesPerView: 2 },
+                    640: { slidesPerView: 1 },
+                    768: { slidesPerView: 2 },
+                    1024: { slidesPerView: 3 },
                 }}
                 style={{ overflow: 'visible' }}
             >

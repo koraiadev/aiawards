@@ -6,7 +6,7 @@ export const metadata = { title: 'INFO | 기업인의 밤' };
 export default function Page() {
     return (
         <>
-            <header className="mx-auto max-w-[var(--w-section-full)] w-full mt-52 mb-32">
+            <header className="width-full mt-52 mb-32">
                 <AnimatedBox>
                     <h2
                         className="text-3xl font-bold"

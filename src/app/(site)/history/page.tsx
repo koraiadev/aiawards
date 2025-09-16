@@ -6,7 +6,7 @@ export const metadata = { title: 'HISTORY | 기업인의 밤' };
 export default function Page() {
     return (
         <>
-            <header className="mx-auto max-w-[var(--w-section-full)] w-full my-52">
+            <header className="width-full my-52">
                 <AnimatedBox>
                     <h2
                         className="text-3xl font-bold"
@@ -22,7 +22,7 @@ export default function Page() {
 
             <section
                 className="
-                  relative mx-auto max-w-[var(--w-section-full)] w-full mb-52
+                  relative width-full mb-52
                   before:content-[''] before:absolute before:top-0 before:bottom-0
                   before:left-6 before:w-px before:bg-stone-300
                   md:before:left-8

@@ -8,7 +8,7 @@
     --font-pretendard: ui-sans-serif, system-ui, -apple-system;
     --color-main: #CFAE89;
 
-    --w-section-full: 1200px;
+    --w-section-full: 1024px;
 }
 
 body {
@@ -122,5 +122,9 @@ html, body { overflow-x: hidden }
 @layer utilities {
     .vertical-bar {
         @apply before:content-['|'] before:mr-3 before:text-main;
+    }
+
+    .width-full {
+        @apply mx-auto max-w-[var(--w-section-full)] w-full px-5;
     }
 }
