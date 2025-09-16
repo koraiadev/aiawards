@@ -8,6 +8,9 @@ import { logger } from '@/utils/logger';
 const accentText = 'text-main font-bold text-2xl';
 const boxBase = 'flex justify-center items-center border border-main text-main text-center';
 
+const activeButtonStyle =
+    'border-black text-black transition-all duration-500 bg-[length:200%_auto] bg-gradient-to-r from-main via-[#e2c9a8] to-main hover:bg-[position:right_center]';
+
 export default function InfoForm() {
     const [isOutline, setIsOutline] = useState(true);
 
@@ -20,12 +23,14 @@ export default function InfoForm() {
     };
 
     return (
-        <section className="width-full flex mb-52 gap-24 text-white/80">
+        <section className="width-full flex flex-col gap-4 md:flex-row mb-52 md:gap-24 text-white/80">
+            {/* Tabs */}
             <div
                 className={`
-                h-full flex flex-col gap-20
-                text-xl font-semibold py-1
-            `}
+                    hidden
+                    h-full md:flex flex-col gap-20
+                    text-xl font-semibold py-1
+                `}
             >
                 <button
                     onClick={() => handleClick('outline')}
@@ -41,13 +46,38 @@ export default function InfoForm() {
                     <p className="vertical-bar">참가안내</p>
                 </button>
             </div>
+            {/* Mobile Tabs */}
+            <div
+                className={`
+                    md:hidden
+                    mb-12 flex gap-5 justify-center
+                    text-xl font-semibold
+                `}
+            >
+                <button
+                    onClick={() => handleClick('outline')}
+                    className={`relative flex-1 m-2 px-10 py-6 text-center font-semibold border
+                        ${isOutline ? activeButtonStyle : 'border-main text-main'}
+                    `}
+                >
+                    행사개요
+                </button>
+                <button
+                    onClick={() => handleClick('attend')}
+                    className={`relative flex-1 m-2 px-10 py-6 text-center font-semibold border
+                        ${!isOutline ? activeButtonStyle : ' border-main text-main'}
+                    `}
+                >
+                    참가안내
+                </button>
+            </div>
             <div className="flex flex-col gap-14">
                 {isOutline ? (
                     <>
                         {/* 행사개요 */}
-                        <div className="flex gap-10">
-                            <div className="w-44">
-                                <div>
+                        <div className="lg:flex gap-10">
+                            <div className="lg:w-44 w-full">
+                                <div className="mb-5 lg:mb-0">
                                     <InfoLabel>소개</InfoLabel>
                                 </div>
                             </div>
@@ -60,31 +90,42 @@ export default function InfoForm() {
                                     </span>
                                     을 개최합니다.
                                 </p>
-                                <p className="text-base mt-5">
-                                    인공지능(AI) 보급, 확산 및 진흥을 위해 열리는 [2024 대한민국
-                                    인공지능대상 & 기업인의 밤]에는 ‘과학기술정보통신부 장관상’,
-                                    ‘산업통상자원부 장관상’, ‘중소벤처기업부 장관상’
-                                    ‘한국지능정보사회진흥 원장상’, ‘정보통신산업진흥원 원장상’,
-                                    ‘정보통신기획평가원 원장상’을 각 기관과 함께 선정, 시상 합니다.
-                                    제 5회 행사인 [2023 대한민국 인공지능대상]에서는 총 7개사가
-                                    수상의 영광을 누렸습니다. 수상기업은 새로운 AI기술과 서비스를
-                                    선보이고, 글로벌 진출을 타진하는 등 AI업계를 선도했습니다. [2024
-                                    대한민국 인공지능대상 & 기업인의 밤]은 전 세계 AI 시장 및 기술
-                                    동향 조사를 바탕으로 AI 전문가 심사위원단이 수상자를 선정합니다.
-                                </p>
+                                <ul className="w-full">
+                                    <li className="text-base mt-4">
+                                        인공지능(AI) 보급, 확산 및 진흥을 위해 열리는 [2024 대한민국
+                                        인공지능대상 & 기업인의 밤]에는 ‘과학기술정보통신부 장관상’,
+                                        ‘산업통상자원부 장관상’, ‘중소벤처기업부 장관상’
+                                        ‘한국지능정보사회진흥 원장상’, ‘정보통신산업진흥원 원장상’,
+                                        ‘정보통신기획평가원 원장상’을 각 기관과 함께 선정, 시상
+                                        합니다.
+                                    </li>
+                                    <li className="text-base mt-2">
+                                        제 5회 행사인 [2023 대한민국 인공지능대상]에서는 총 7개사가
+                                        수상의 영광을 누렸습니다. 수상기업은 새로운 AI기술과
+                                        서비스를 선보이고, 글로벌 진출을 타진하는 등 AI업계를
+                                        선도했습니다.
+                                    </li>
+                                    <li className="text-base mt-2">
+                                        [2024 대한민국 인공지능대상 & 기업인의 밤]은 전 세계 AI 시장
+                                        및 기술 동향 조사를 바탕으로 AI 전문가 심사위원단이 수상자를
+                                        선정합니다.
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                        <div className="flex gap-10">
-                            <div className="w-44">
-                                <InfoLabel>주최사</InfoLabel>
+                        <div className="lg:flex gap-10">
+                            <div className="lg:w-44 w-full">
+                                <div className="mb-5 lg:mb-0">
+                                    <InfoLabel>주최사</InfoLabel>
+                                </div>
                             </div>
-                            <div className="w-full flex items-center text-lg">
+                            <div className="w-full flex items-center text-lg ">
                                 IT조선 · (사)한국인공지능협회
                             </div>
                         </div>
-                        <div className="flex gap-10">
-                            <div className="w-44">
-                                <div>
+                        <div className="lg:flex gap-10">
+                            <div className="lg:w-44 w-full">
+                                <div className="mb-5 lg:mb-0">
                                     <InfoLabel>후원</InfoLabel>
                                 </div>
                             </div>
@@ -93,17 +134,21 @@ export default function InfoForm() {
                                 한국지능정보사회진흥원, 정보통신산업진흥원, 정보통신기획평가원
                             </div>
                         </div>
-                        <div className="flex gap-10">
-                            <div className="w-44">
-                                <InfoLabel>미디어후원</InfoLabel>
+                        <div className="lg:flex gap-10">
+                            <div className="lg:w-44 w-full">
+                                <div className="mb-5 lg:mb-0">
+                                    <InfoLabel>미디어후원</InfoLabel>
+                                </div>
                             </div>
                             <div className="w-full flex items-center text-lg">
                                 조선일보, TV조선, 조선비즈
                             </div>
                         </div>
-                        <div className="flex gap-10">
-                            <div className="w-44">
-                                <InfoLabel>시상 장소</InfoLabel>
+                        <div className="lg:flex gap-10">
+                            <div className="lg:w-44 w-full">
+                                <div className="mb-5 lg:mb-0">
+                                    <InfoLabel>시상 장소</InfoLabel>
+                                </div>
                             </div>
                             <div className="w-full flex items-center text-lg">
                                 웨스틴조선 서울 2F 오키드룸
@@ -113,9 +158,9 @@ export default function InfoForm() {
                 ) : (
                     <>
                         {/* 참가안내 */}
-                        <div className="flex gap-10">
-                            <div className="w-44">
-                                <div>
+                        <div className="lg:flex gap-10">
+                            <div className="lg:w-44 w-full">
+                                <div className="mb-5 lg:mb-0">
                                     <InfoLabel>행사일정</InfoLabel>
                                 </div>
                             </div>
@@ -137,14 +182,14 @@ export default function InfoForm() {
                                     <div className="overflow-x-auto mt-2">
                                         <table className="min-w-full border-collapse text-sm">
                                             <thead>
-                                                <tr className="bg-main text-white">
-                                                    <th scope="col" className="px-4 py-2 text-left">
+                                                <tr className="bg-main text-black">
+                                                    <th scope="col" className="px-4 py-3 text-left">
                                                         시간
                                                     </th>
-                                                    <th scope="col" className="px-4 py-2 text-left">
+                                                    <th scope="col" className="px-4 py-3 text-left">
                                                         행사내용
                                                     </th>
-                                                    <th scope="col" className="px-4 py-2 text-left">
+                                                    <th scope="col" className="px-4 py-3 text-left">
                                                         비고
                                                     </th>
                                                 </tr>
@@ -230,9 +275,9 @@ export default function InfoForm() {
                                 </ul>
                             </div>
                         </div>
-                        <div className="flex gap-10">
-                            <div className="w-44">
-                                <div>
+                        <div className="lg:flex gap-10">
+                            <div className="lg:w-44 w-full">
+                                <div className="mb-5 lg:mb-0">
                                     <InfoLabel>심사 과정</InfoLabel>
                                 </div>
                             </div>
@@ -247,7 +292,7 @@ export default function InfoForm() {
                                         최종 심사 : 분야별 AI 전문가로 구성된 심사위원단이
                                         기술성(30%), 혁신성(30%), 시장성(40%) 기준으로 공정 평가
                                     </li>
-                                    <div className="flex gap-10 mt-3 ml-5">
+                                    <div className="flex justify-between gap-10 mt-3 ml-5">
                                         <div className={`${boxBase} w-36 h-24`}>기술성 30</div>
                                         <div className={`${boxBase} w-36 h-24`}>혁신성 30</div>
                                         <div className={`${boxBase} w-36 h-24`}>시장성 40</div>
@@ -255,9 +300,9 @@ export default function InfoForm() {
                                 </ul>
                             </div>
                         </div>
-                        <div className="flex gap-10">
-                            <div className="w-44">
-                                <div>
+                        <div className="lg:flex gap-10">
+                            <div className="lg:w-44 w-full">
+                                <div className="mb-5 lg:mb-0">
                                     <InfoLabel>수상부문</InfoLabel>
                                 </div>
                             </div>
@@ -287,9 +332,9 @@ export default function InfoForm() {
                                 </p>
                             </div>
                         </div>
-                        <div className="flex gap-10">
-                            <div className="w-44">
-                                <div>
+                        <div className="lg:flex gap-10">
+                            <div className="lg:w-44 w-full">
+                                <div className="mb-5 lg:mb-0">
                                     <InfoLabel>신청 대상</InfoLabel>
                                 </div>
                             </div>
@@ -307,9 +352,9 @@ export default function InfoForm() {
                                 </ul>
                             </div>
                         </div>
-                        <div className="flex gap-10">
-                            <div className="w-44">
-                                <div>
+                        <div className="lg:flex gap-10">
+                            <div className="lg:w-44 w-full">
+                                <div className="mb-5 lg:mb-0">
                                     <InfoLabel>신청 방법</InfoLabel>
                                 </div>
                             </div>
@@ -359,9 +404,9 @@ export default function InfoForm() {
                                 </Button>
                             </div>
                         </div>
-                        <div className="flex gap-10">
-                            <div className="w-44">
-                                <div>
+                        <div className="lg:flex gap-10">
+                            <div className="lg:w-44 w-full">
+                                <div className="mb-5 lg:mb-0">
                                     <InfoLabel>접수 문의</InfoLabel>
                                 </div>
                             </div>

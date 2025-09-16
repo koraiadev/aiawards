@@ -21,12 +21,15 @@ export default function NewsItem({ item }: { item: News }) {
             >
                 <div
                     className="
-                        flex flex-col gap-5 rounded cursor-pointer bg-dark
+                        flex flex-col gap-5 rounded cursor-pointer
+                        bg-dark
                         transition-transform transform duration-500 ease-out
                         hover:-translate-y-4 hover:shadow-2xl
                     "
                     style={{
                         boxShadow: 'rgba(149, 157, 165, 0.2) 0px 8px 24px',
+                        background:
+                            'linear-gradient(0deg,rgba(0, 0, 0, 1) 0%, rgba(52, 55, 89, 1) 73%)',
                     }}
                 >
                     <div className="relative w-auto h-48 img-zoom-container rounded">
