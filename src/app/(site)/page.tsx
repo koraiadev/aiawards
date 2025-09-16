@@ -113,11 +113,7 @@ export default function Page() {
                             >
                                 <div
                                     className={`w-6 h-6 rounded-full border-2 z-10
-                                    ${
-                                        step.active
-                                            ? 'bg-[var(--color-main)] border-[var(--color-main)]'
-                                            : 'border-[var(--color-main)] bg-dark'
-                                    }`}
+                                    ${step.active ? 'bg-main border-main' : 'border-main bg-dark'}`}
                                 />
 
                                 {i < arr.length - 1 && (
@@ -125,17 +121,13 @@ export default function Page() {
                                 )}
 
                                 <div className="mt-6 flex flex-col gap-1">
-                                    <p className="font-semibold text-[var(--color-main)]">
-                                        {step.title}
-                                    </p>
+                                    <p className="font-semibold text-main">{step.title}</p>
                                     <p
-                                        className={`${step.active ? 'text-[var(--color-main)]' : ''} font-semibold`}
+                                        className={`${step.active ? 'text-main' : ''} font-semibold`}
                                     >
                                         {step.date}
                                     </p>
-                                    <p
-                                        className={`${step.active ? 'text-[var(--color-main)]' : ''}`}
-                                    >
+                                    <p className={`${step.active ? 'text-main' : ''}`}>
                                         {step.desc}
                                     </p>
                                 </div>

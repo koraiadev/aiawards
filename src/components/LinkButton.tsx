@@ -20,7 +20,7 @@ export default function LinkButton({ href, children, className }: LinkButtonProp
 
             <span
                 className="absolute inset-0 flex items-center justify-center gap-1
-                   bg-gradient-to-r from-[var(--color-main)] to-[var(--color-main)] bg-no-repeat bg-[length:0%_100%]
+                   bg-gradient-to-r from-main to-main bg-no-repeat bg-[length:0%_100%]
                    bg-clip-text text-transparent
                    group-hover:bg-[length:100%_100%]
                    transition-[background-size] duration-700 ease-out"
@@ -30,7 +30,7 @@ export default function LinkButton({ href, children, className }: LinkButtonProp
 
             <span
                 className="absolute inset-0 border border-white
-                   group-hover:border-[var(--color-main)]
+                   group-hover:border-main
                    transition-colors duration-500 ease-out
                    pointer-events-none"
             />

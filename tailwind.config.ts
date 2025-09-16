@@ -1,4 +1,3 @@
-// tailwind.config.ts
 import type { Config } from 'tailwindcss';
 import lineClamp from '@tailwindcss/line-clamp';
 
@@ -10,6 +9,7 @@ const config: Config = {
                 serif: ['Nanum Myeongjo', 'serif'],
             },
             colors: {
+                main: '#CFAE89',
                 dark: '#20212f',
             },
         },

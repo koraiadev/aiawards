@@ -78,7 +78,7 @@ html, body { overflow-x: hidden }
 
 @layer components {
     .input-text {
-        @apply absolute left-0 bottom-0 h-px w-0 bg-[var(--color-main)]
+        @apply absolute left-0 bottom-0 h-px w-0 bg-main
         transition-all duration-300
         focus:border-transparent
         peer-focus:w-full;
@@ -121,6 +121,6 @@ html, body { overflow-x: hidden }
 
 @layer utilities {
     .vertical-bar {
-        @apply before:content-['|'] before:mr-3 before:text-[var(--color-main)];
+        @apply before:content-['|'] before:mr-3 before:text-main;
     }
 }

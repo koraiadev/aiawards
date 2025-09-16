@@ -68,7 +68,7 @@ export default function ContactForm() {
                         rows={10}
                         className="peer w-full bg-transparent p-3 outline-none border resize-none transition-colors duration-300 focus:border-transparent"
                     />
-                    <span className="pointer-events-none absolute inset-px border-2 border-[var(--color-main)] opacity-0 peer-focus:animate-border-spin" />
+                    <span className="pointer-events-none absolute inset-px border-2 border-main opacity-0 peer-focus:animate-border-spin" />
                 </div>
             </div>
             <div className="flex w-full">

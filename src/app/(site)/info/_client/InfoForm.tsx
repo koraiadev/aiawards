@@ -5,9 +5,8 @@ import React, { useState } from 'react';
 import Button from '@/components/Button';
 import { logger } from '@/utils/logger';
 
-const accentText = 'text-[var(--color-main)] font-bold text-2xl';
-const boxBase =
-    'flex justify-center items-center border border-[var(--color-main)] text-[var(--color-main)] text-center';
+const accentText = 'text-main font-bold text-2xl';
+const boxBase = 'flex justify-center items-center border border-main text-main text-center';
 
 export default function InfoForm() {
     const [isOutline, setIsOutline] = useState(true);
@@ -30,14 +29,14 @@ export default function InfoForm() {
             >
                 <button
                     onClick={() => handleClick('outline')}
-                    className={`font-semibold text-2xl w-32 ${isOutline && 'text-[var(--color-main)]'}`}
+                    className={`font-semibold text-2xl w-32 ${isOutline && 'text-main'}`}
                 >
                     행사개요
                 </button>
 
                 <button
                     onClick={() => handleClick('attend')}
-                    className={`font-semibold text-2xl w-32 ${!isOutline && 'text-[var(--color-main)]'}`}
+                    className={`font-semibold text-2xl w-32 ${!isOutline && 'text-main'}`}
                 >
                     참가안내
                 </button>
@@ -131,14 +130,14 @@ export default function InfoForm() {
                                     <li className="list-disc ml-5">
                                         최 종 심 사: 2024년 11월 1일 금요일
                                     </li>
-                                    <li className="list-disc ml-5 text-[var(--color-main)]">
+                                    <li className="list-disc ml-5 text-main">
                                         시 상 식 : 2024년 11월 19일 화요일
                                     </li>
                                     <li className="list-disc ml-5">시 간 표</li>
                                     <div className="overflow-x-auto mt-2">
                                         <table className="min-w-full border-collapse text-sm">
                                             <thead>
-                                                <tr className="bg-[var(--color-main)] text-white">
+                                                <tr className="bg-main text-white">
                                                     <th scope="col" className="px-4 py-2 text-left">
                                                         시간
                                                     </th>

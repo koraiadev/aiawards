@@ -13,7 +13,7 @@ export default function InfoLabel({
         <div
             className={`
                 h-full flex items-center text-white
-                text-xl font-semibold py-1 border-b-[4px] border-[var(--color-main)] ${className}
+                text-xl font-semibold py-1 border-b-[4px] border-main ${className}
             `}
         >
             {label ? (

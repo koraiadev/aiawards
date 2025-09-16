@@ -17,7 +17,7 @@ export default function Button({
                     relative flex-1 m-2 px-10 py-6 text-center uppercase
                     text-black font-semibold shadow-md
                     transition-all duration-500 bg-[length:200%_auto]
-                    bg-gradient-to-r from-[var(--color-main)] via-[#e2c9a8] to-[var(--color-main)]
+                    bg-gradient-to-r from-main via-[#e2c9a8] to-main
                     hover:bg-[position:right_center]
                     ${className}
                 `}
