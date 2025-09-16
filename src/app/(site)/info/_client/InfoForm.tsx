@@ -83,16 +83,16 @@ export default function InfoForm() {
                             </div>
                             <div className="w-full flex flex-col justify-center text-xl">
                                 <p>
-                                    조선미디어그룹의 테크전문 매체 IT조선이
+                                    #테크전문 매체 에서
                                     <br />
                                     <span className={accentText}>
-                                        [2024 대한민국 인공지능대상 & 기업인의 밤]
+                                        [2025 대한민국 인공지능대상 & 기업인의 밤]
                                     </span>
                                     을 개최합니다.
                                 </p>
                                 <ul className="w-full">
                                     <li className="text-base mt-4">
-                                        인공지능(AI) 보급, 확산 및 진흥을 위해 열리는 [2024 대한민국
+                                        인공지능(AI) 보급, 확산 및 진흥을 위해 열리는 [2025 대한민국
                                         인공지능대상 & 기업인의 밤]에는 ‘과학기술정보통신부 장관상’,
                                         ‘산업통상자원부 장관상’, ‘중소벤처기업부 장관상’
                                         ‘한국지능정보사회진흥 원장상’, ‘정보통신산업진흥원 원장상’,
@@ -106,7 +106,7 @@ export default function InfoForm() {
                                         선도했습니다.
                                     </li>
                                     <li className="text-base mt-2">
-                                        [2024 대한민국 인공지능대상 & 기업인의 밤]은 전 세계 AI 시장
+                                        [2025 대한민국 인공지능대상 & 기업인의 밤]은 전 세계 AI 시장
                                         및 기술 동향 조사를 바탕으로 AI 전문가 심사위원단이 수상자를
                                         선정합니다.
                                     </li>
@@ -119,9 +119,7 @@ export default function InfoForm() {
                                     <InfoLabel>주최사</InfoLabel>
                                 </div>
                             </div>
-                            <div className="w-full flex items-center text-lg ">
-                                IT조선 · (사)한국인공지능협회
-                            </div>
+                            <div className="w-full flex items-center text-lg ">#주최사</div>
                         </div>
                         <div className="lg:flex gap-10">
                             <div className="lg:w-44 w-full">
@@ -140,9 +138,7 @@ export default function InfoForm() {
                                     <InfoLabel>미디어후원</InfoLabel>
                                 </div>
                             </div>
-                            <div className="w-full flex items-center text-lg">
-                                조선일보, TV조선, 조선비즈
-                            </div>
+                            <div className="w-full flex items-center text-lg">#미디어후원</div>
                         </div>
                         <div className="lg:flex gap-10">
                             <div className="lg:w-44 w-full">
@@ -167,16 +163,16 @@ export default function InfoForm() {
                             <div className="w-full flex items-center text-lg">
                                 <ul className="w-full">
                                     <li className="list-disc ml-5">
-                                        ️신청서 / 공적서 접수 : 2024년 9월 27일 ~ 10월 28일
+                                        ️신청서 / 공적서 접수 : 2025년 0월 0일 ~ 0월 0일
                                     </li>
                                     <li className="list-disc ml-5">
-                                        서 류 심 사 : 2024년 10월 29일 화요일 ~ 30일 수요일
+                                        서 류 심 사 : 2025년 0월 0일 화요일 ~ 0일 0요일
                                     </li>
                                     <li className="list-disc ml-5">
-                                        최 종 심 사: 2024년 11월 1일 금요일
+                                        최 종 심 사: 2025년 0월 0일 0요일
                                     </li>
                                     <li className="list-disc ml-5 text-main">
-                                        시 상 식 : 2024년 11월 19일 화요일
+                                        시 상 식 : 2024년 0월 0일 0요일
                                     </li>
                                     <li className="list-disc ml-5">시 간 표</li>
                                     <div className="overflow-x-auto mt-2">
@@ -216,7 +212,7 @@ export default function InfoForm() {
                                                         18:02~18:05
                                                     </td>
                                                     <td className="px-4 py-2">개회사</td>
-                                                    <td className="px-4 py-2">IT조선</td>
+                                                    <td className="px-4 py-2">#개회사</td>
                                                 </tr>
                                                 <tr>
                                                     <td className="px-4 py-2 whitespace-nowrap">
@@ -360,7 +356,7 @@ export default function InfoForm() {
                             </div>
                             <div className="w-full flex flex-col justify-center text-lg">
                                 <div>
-                                    대한민국인공지능대상 운영사무국으로 아래 서류 작성 및 첨부 후,
+                                    대한민국 인공지능대상 운영사무국으로 아래 서류 작성 및 첨부 후,
                                     이메일 제출
                                     <br /> ※ 관련 자료 미비 시, 운영사무국에서 추가 서류를 요청할 수
                                     있습니다.
@@ -411,18 +407,12 @@ export default function InfoForm() {
                                 </div>
                             </div>
                             <div className="w-full flex flex-col justify-center text-lg">
-                                <p className="font-bold text-xl">
-                                    대한민국 인공지능대상 운영사무국
-                                </p>
+                                <p className="font-bold text-xl">#운영사무국</p>
                                 <ul className="w-full">
-                                    <li className="list-disc ml-5">
-                                        Address. 서울특별시 중구 세종대로135 코리아나호텔 9층 912호
-                                    </li>
-                                    <li className="list-disc ml-5">Tel. 070-4285-0546</li>
-                                    <li className="list-disc ml-5">Fax. 070-4285-0547</li>
-                                    <li className="list-disc ml-5">
-                                        E-mail. eventit@chosunbiz.com
-                                    </li>
+                                    <li className="list-disc ml-5">Address. </li>
+                                    <li className="list-disc ml-5">Tel. </li>
+                                    <li className="list-disc ml-5">Fax. </li>
+                                    <li className="list-disc ml-5">E-mail. </li>
                                 </ul>
                                 <p className="font-bold text-xl mt-5">인공지능 기업인의 밤</p>
                                 <ul className="w-full">

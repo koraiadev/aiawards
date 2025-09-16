@@ -5,7 +5,7 @@ export const metadata = { title: 'BENEFIT | 기업인의 밤' };
 export default function Page() {
     return (
         <>
-            <header className="width-full md:mt-52 my-32">
+            <header className="width-full mt-32 my-16 md:mt-52 md:my-32">
                 <AnimatedBox fixed={false}>
                     <p className="mb-3 font-semibold tracking-wider vertical-bar">BENEFIT</p>
                 </AnimatedBox>

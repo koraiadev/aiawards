@@ -12,10 +12,12 @@ export default function ContactForm() {
     };
 
     return (
-        <section className="width-full flex flex-col gap-24 mb-52">
-            <div className="flex gap-10">
-                <div className="w-44">
-                    <InfoLabel label="name">성함</InfoLabel>
+        <section className="width-full flex flex-col gap-12 sm:gap-24 mb-52">
+            <div className="sm:flex gap-10">
+                <div className="sm:w-44 w-full">
+                    <div className="mb-5 sm:mb-0">
+                        <InfoLabel label="name">성함</InfoLabel>
+                    </div>
                 </div>
                 <div className="w-full relative">
                     <input
@@ -27,9 +29,11 @@ export default function ContactForm() {
                     <span className="input-text" />
                 </div>
             </div>
-            <div className="flex gap-10">
-                <div className="w-44">
-                    <InfoLabel label="email">이메일</InfoLabel>
+            <div className="sm:flex gap-10">
+                <div className="sm:w-44 w-full">
+                    <div className="mb-5 sm:mb-0">
+                        <InfoLabel label="email">이메일</InfoLabel>
+                    </div>
                 </div>
                 <div className="w-full relative">
                     <input
@@ -41,9 +45,11 @@ export default function ContactForm() {
                     <span className="input-text" />
                 </div>
             </div>
-            <div className="flex gap-10">
-                <div className="w-44">
-                    <InfoLabel label="tel">연락처</InfoLabel>
+            <div className="sm:flex gap-10">
+                <div className="sm:w-44 w-full">
+                    <div className="mb-5 sm:mb-0">
+                        <InfoLabel label="tel">연락처</InfoLabel>
+                    </div>
                 </div>
                 <div className="w-full relative">
                     <input
@@ -55,9 +61,9 @@ export default function ContactForm() {
                     <span className="input-text" />
                 </div>
             </div>
-            <div className="flex gap-10">
-                <div className="w-44">
-                    <div>
+            <div className="sm:flex gap-10">
+                <div className="sm:w-44 w-full">
+                    <div className="mb-5 sm:mb-0">
                         <InfoLabel label="content">상담내용</InfoLabel>
                     </div>
                 </div>

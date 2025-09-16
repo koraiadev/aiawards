@@ -157,18 +157,18 @@ export default function Page() {
                         {[
                             {
                                 title: '신청 접수',
-                                date: '9.27 - 10.28',
+                                date: '0.0 - 0.0',
                                 desc: '온라인 서류 제출',
                             },
                             {
                                 title: '서류 심사',
-                                date: '10.29 - 10.30',
+                                date: '0.0 - 0.0',
                                 desc: '1차 후보 선정',
                             },
-                            { title: '최종 심사', date: '11.1', desc: '전문가 최종 평가' },
+                            { title: '최종 심사', date: '0.0', desc: '전문가 최종 평가' },
                             {
                                 title: '시상식',
-                                date: '11.19',
+                                date: '0.0',
                                 desc: '기업인의 밤 개최',
                                 active: true,
                             },
